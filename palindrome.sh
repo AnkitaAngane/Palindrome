@@ -5,16 +5,16 @@
 function palindrome() {
 
 num1=$1
-s=0
+var1=0
 rev=''
 temp=$num1
 
 while [ $num1 -gt 0 ]
 do
 
-	s=$(( $num1 % 10 ))
+	var1=$(( $num1 % 10 ))
 	num1=$(( $num1 / 10 ))
-	rev=$( echo ${rev}${s} )
+	rev=$( echo ${rev}${var1} )
 done
 
 if [ $temp -eq $rev ]
